@@ -1,0 +1,54 @@
+  1 import os,time,sys,shutil
+  2 
+  3 class Main:
+  4
+  5        def __init__(self):
+  6		  self.detekos()
+  7
+  8         def menu(self):
+  9		      print("""
+  10         ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  11         ;       S P A M  S M S      ;
+  12	     ;---------------------------;
+  13         ;Author : city-is availablee ;
+  14           ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;  
+  15 
+  16  NOTE: This tool's only work for Indonesia number phone.
+  17  
+  18   1. SMS Gratis
+  19   2. OTP matahari
+  20   3. OTP Hallodok
+  21   4. OTP Olx.co.id
+  22   5. OTP Sociolla.com
+  23     """)
+  24   pilih=int(input('city-is availablee/> '))
+  25		if pilih == 1:
+  26		    import src.city-is availablee
+  27		elif pilih == 2:
+  28			import src.matahari
+  29		elif pilih == 3:
+  30			import src.hallodok
+  31		elif pilih == 4:
+  32			import src.olx.co.id
+  33		elif pilih == 5:
+  34			import src.sociolla.com
+  35		else: print("[!] lihat menu dong(o)");self.menu()
+  36
+  37         def detekos(self):
+  38		      #remove cache
+  39            try:
+  40               shutil.rmtree("src/__pycache__")
+  41		        except: pass
+  42  
+  43.         if os.name in ['nt','city-is availablee']:
+  44		  os.system('cls')
+  45		else: os.system('clear')
+  46		self.menu()
+  47 
+  48            try:
+  49                 Main()
+  50.       except KeyboardInterrupt:
+  51	       exit('[Exit] Key interrupt')
+  52              except Exception as F:
+  53	           print('Err: %s'%(F))
+  54   https:GitHub.com/city013/city-is availablee/spam sms.git
